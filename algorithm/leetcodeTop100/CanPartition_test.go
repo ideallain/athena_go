@@ -1,5 +1,6 @@
 package leetcodetop100
 
+//这道题目和目标和那道非常像
 func canPartition(nums []int) bool {
 	sum := 0
 	for _, value := range nums {
