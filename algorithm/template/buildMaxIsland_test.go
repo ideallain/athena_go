@@ -1,6 +1,9 @@
 package template
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func buildMaxIsland(grid [][]int) int {
 	result := 0
@@ -75,7 +78,7 @@ func findNearByIsland(grid [][]int, x, y int, hashMap map[int]int) int {
 	return sum
 }
 
-func TestBuildMaxIsland() {
+func TestBuildMaxIsland(t *testing.T) {
 	var m, n int
 	fmt.Scan(&m, &n)
 
