@@ -29,11 +29,12 @@ func connectWord(words []string, startWord string, endWord string) int {
 				result++
 				queue = append(queue, "")
 			}
+			continue
 		}
 		arr := []rune(word)
 		for i := 0; i < len(arr); i++ {
 			old := arr[i]
-			for j := 'a'; j < 'z'; j++ {
+			for j := 'a'; j <= 'z'; j++ {
 				arr[i] = j
 				newWord := string(arr)
 				if allWord[newWord] && !visitedWord[newWord] {
